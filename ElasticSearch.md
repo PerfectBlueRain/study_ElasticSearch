@@ -12,11 +12,14 @@ $> bin/plugin --remove head
 $> bin/plugin --install mobz/elasticsearch-head   //http://localhost:9200/_plugin/head/
 $> bin/plugin --install lukas-vlcek/bigdesk     //http://localhost:9200/_plugin/bigdesk/
 $> bin/plugin --install lmenezes/elasticsearch-kopf  // http://localhost:9200/_plugin/kopf/
+$> bin/plugin -i elasticsearch/marvel/latest // http://any-server-in-cluster:9200/_plugin/marvel
 ```
 
-3. 실행
+3. 실행 & 중지
 ```
 $> bin/elasticsearch -d (d는 백그라운드로)
+
+$> curl -XPOST localhost:9200/_shutdown
 ```
  curl 'http://localhost:9200/?pretty' 를 입력해서 결과가 제대로 오는지 체크
 설
