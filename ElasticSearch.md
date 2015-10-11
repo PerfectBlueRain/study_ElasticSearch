@@ -36,21 +36,37 @@ $> curl -XPOST localhost:9200/_shutdown
    - basic 데이터처리
    - QueryDSL : Query / Filter
 
-
 ---
 
 - 데이터구조
-Database -> Index
-Table -> Type
-Row -> Document : 데이터가 저장되는 최소의 단위
+   - Database -> Index
+   - Table -> Type
+   - Row -> Document : 데이터가 저장되는 최소의 단위
 
-```
-//REST API
-$ curl -X{methon} http://{hostIP}:{port}/{Index}/{Type}/{Document id} -d '{...data...}'
+   - column -> Field
+   - schema -> mapping
 
-$ curl localhost:9200  // health check
-```
+- REST API : POST / GET / PUT / DELETE
+   ```
+   $ curl -X{methon} http://{hostIP}:{port}/{Index}/{Type}/{Document id} -d '{...data...}'
+
+   $ curl localhost:9200  // health check
+
+   - pretty=true  //결과를 JSON형시으로 포매팅해서 보여줌
+   - _source 필드 : JSON형시으로 데이터가 저장된다.
+   - _version 필드 : test
+   ```
 ---
-- pretty=true  //결과를 JSON형시으로 포매팅해서 보여줌
-- _source 필드 : JSON형시으로 데이터가 저장된다.
-- _version 필드 : test
+### 검색
+- Searching
+- Aggregation
+- QueryDSL
+- Filter
+
+---
+### 스키마
+- Mapping : 데이터의 저장형태와 검색엔진에서 해당 데이터에 어떻게 접근하고 처리하는지에 대한 명세. 즉 스키마
+
+---
+### 분석
+- Analysis
