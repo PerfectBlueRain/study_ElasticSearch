@@ -60,3 +60,6 @@ $ curl localhost:9200  // health check
 
 - 벌크API : 배치작업
    - _bulk
+
+```
+curl -XPOST localhost:9200/

@@ -44,3 +44,6 @@ client.update(updateRequest).get();
 #### Bulk API
 - BulkRequestBuilder / prepareBulk()
 - BulkProcessor : offers a simple interface to flush bulk operations automatically based on the number or size of requests, or after a given period
+
+```
+```
