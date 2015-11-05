@@ -10,7 +10,8 @@
    - filter / missing / terms / range / histogram
 - metrics
    - 우리가 알고싶은 정보, bucket에 표함된 Document에대한 statistics
-   - min / max / sum / avg
+   - min / max / sum / avg / percentile
+   - Percentile Aggregation : https://www.elastic.co/guide/en/elasticsearch/reference/master/search-aggregations-metrics-percentile-aggregation.html / The Weighted Percentile method
 
 ```
 {
